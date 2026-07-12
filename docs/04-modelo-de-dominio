@@ -1,0 +1,189 @@
+# 04 - Modelo de Domínio
+
+## Objetivo
+
+O Modelo de Domínio tem como objetivo identificar as principais entidades do sistema CheckHome, suas responsabilidades e os relacionamentos existentes entre elas. Este documento servirá como base para a modelagem do banco de dados, criação das Models do Laravel e implementação das regras de negócio.
+
+---
+
+# Entidades do Sistema
+
+## Usuário
+
+Representa qualquer pessoa que possua acesso ao sistema.
+
+Um usuário poderá possuir um ou mais perfis de acesso, como Gestor, Vistoriador, Proprietário ou Inquilino.
+
+### Principais responsabilidades
+
+* Realizar login.
+* Atualizar seus dados.
+* Alterar sua senha.
+* Acessar funcionalidades conforme seu perfil.
+
+---
+
+## Perfil
+
+Representa os níveis de acesso existentes no sistema.
+
+Perfis disponíveis:
+
+* Gestor
+* Vistoriador
+* Proprietário
+* Inquilino
+
+Um usuário poderá possuir mais de um perfil.
+
+---
+
+## Imóvel
+
+Representa um imóvel administrado pela imobiliária.
+
+Cada imóvel pertence a um proprietário e poderá possuir diversos contratos ao longo do tempo.
+
+### Principais responsabilidades
+
+* Armazenar informações do imóvel.
+* Manter o histórico de contratos.
+* Manter o histórico de vistorias.
+
+---
+
+## Contrato
+
+Representa o vínculo entre proprietário, inquilino e imóvel.
+
+Cada contrato possui período de vigência e poderá originar diversas vistorias.
+
+### Principais responsabilidades
+
+* Registrar o aluguel.
+* Relacionar proprietário e inquilino.
+* Servir de base para as vistorias.
+
+---
+
+## Vistoria
+
+Representa uma inspeção realizada em um imóvel.
+
+Cada vistoria pertence a um contrato e é executada por um vistoriador.
+
+### Principais responsabilidades
+
+* Registrar o estado do imóvel.
+* Armazenar fotografias.
+* Registrar observações.
+* Permitir comparação entre entrada e saída.
+
+---
+
+## Cômodo
+
+Representa um ambiente vistoriado dentro do imóvel.
+
+Exemplos:
+
+* Sala
+* Cozinha
+* Banheiro
+* Quarto
+* Garagem
+* Área de serviço
+
+Cada cômodo pertence a uma vistoria.
+
+---
+
+## Item
+
+Representa um elemento existente dentro de um cômodo.
+
+Exemplos:
+
+* Piso
+* Parede
+* Teto
+* Porta
+* Janela
+* Tomada
+* Interruptor
+
+Cada item poderá possuir fotografias e observações.
+
+---
+
+## Foto
+
+Representa uma fotografia registrada durante a vistoria.
+
+Cada fotografia pertence a um único item.
+
+### Principais responsabilidades
+
+* Registrar o estado do item.
+* Permitir comparação entre vistorias.
+* Manter histórico visual.
+
+---
+
+# Relacionamentos
+
+Um usuário poderá possuir um ou mais perfis.
+
+Um proprietário poderá possuir um ou mais imóveis.
+
+Um imóvel poderá possuir diversos contratos ao longo do tempo.
+
+Um contrato pertence a um único imóvel.
+
+Um contrato possui um proprietário.
+
+Um contrato possui um inquilino.
+
+Um contrato poderá possuir diversas vistorias.
+
+Cada vistoria será realizada por um único vistoriador.
+
+Uma vistoria possui diversos cômodos.
+
+Cada cômodo possui diversos itens.
+
+Cada item poderá possuir diversas fotografias.
+
+---
+
+# Resumo do Modelo de Domínio
+
+Usuário
+
+↓
+
+Perfil
+
+↓
+
+Imóvel
+
+↓
+
+Contrato
+
+↓
+
+Vistoria
+
+↓
+
+Cômodo
+
+↓
+
+Item
+
+↓
+
+Foto
