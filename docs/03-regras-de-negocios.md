@@ -113,3 +113,7 @@
 **RN043** - Todos os registros deverão possuir data de criação e data da última atualização.
 
 **RN044** - O sistema deverá manter a integridade dos relacionamentos entre usuários, imóveis, contratos e vistorias, impedindo a exclusão de registros que comprometam o histórico do sistema.
+
+**RN045** - Um usuário poderá possuir um ou mais perfis de acesso.
+
+**RN046** - Caso o usuário possua mais de um perfil, o sistema deverá permitir alternar entre os perfis sem a necessidade de realizar um novo login.

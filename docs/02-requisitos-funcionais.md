@@ -32,9 +32,9 @@
 
 **RF011** - O sistema deve vincular um imóvel a um proprietário.
 
-**RF012** - O sistema deve permitir que o gestor edite imóveis.
+**RF012** - O sistema deve permitir editar os dados de um imóvel.
 
-**RF013** - O sistema deve permitir que o gestor desative imóveis.
+**RF013** - O sistema deve permitir desativar um imóvel.
 
 ---
 
@@ -56,64 +56,70 @@
 
 **RF019** - O sistema deve permitir atribuir um vistoriador à vistoria.
 
-**RF020** - O sistema deve permitir registrar uma vistoria de entrada ou de saída.
+**RF020** - O sistema deve permitir registrar vistorias dos tipos Entrada, Saída e Outros.
 
-**RF021** - O sistema deve permitir cadastrar cômodos para cada vistoria.
+**RF021** - O sistema deve permitir cadastrar cômodos em uma vistoria.
 
-**RF022** - O sistema deve permitir cadastrar itens para cada cômodo.
+**RF022** - O sistema deve disponibilizar modelos (templates) de cômodos para agilizar o preenchimento da vistoria.
 
-**RF023** - O sistema deve permitir que o vistoriador registre fotografias utilizando a câmera do dispositivo.
+**RF023** - Ao adicionar um cômodo, o sistema deve preencher automaticamente os itens padrão correspondentes ao tipo de cômodo.
 
-**RF024** - O sistema deve permitir excluir fotografias antes da finalização da vistoria.
+**RF024** - O sistema deve permitir que o vistoriador remova itens sugeridos automaticamente.
 
-**RF025** - O sistema deve permitir adicionar observações aos itens vistoriados.
+**RF025** - O sistema deve permitir que o vistoriador adicione novos itens à vistoria.
 
-**RF026** - O sistema deve permitir responder perguntas do checklist da vistoria.
+**RF026** - O sistema deve permitir registrar fotografias para cada item da vistoria.
 
-**RF027** - O sistema deve permitir finalizar uma vistoria.
+**RF027** - O sistema deve permitir excluir fotografias antes da finalização da vistoria.
 
-**RF028** - O sistema deve permitir comparar as vistorias de entrada e saída.
+**RF028** - O sistema deve permitir registrar observações em cada item vistoriado.
 
-**RF029** - O sistema deve manter o histórico de todas as vistorias realizadas.
+**RF029** - O sistema deve permitir responder ao checklist da vistoria.
+
+**RF030** - O sistema deve permitir finalizar uma vistoria.
+
+**RF031** - O sistema deve permitir consultar o histórico de vistorias.
+
+**RF032** - O sistema deve permitir comparar vistorias de entrada e saída.
 
 ---
 
 ## 6. Consultas
 
-**RF030** - O sistema deve permitir que o proprietário visualize seus imóveis.
+**RF033** - O sistema deve permitir que o proprietário visualize seus imóveis.
 
-**RF031** - O sistema deve permitir que o proprietário visualize seus contratos.
+**RF034** - O sistema deve permitir que o proprietário visualize seus contratos.
 
-**RF032** - O sistema deve permitir que o proprietário visualize as vistorias de seus imóveis.
+**RF035** - O sistema deve permitir que o proprietário visualize as vistorias de seus imóveis.
 
-**RF033** - O sistema deve permitir que o inquilino visualize seu contrato.
+**RF036** - O sistema deve permitir que o inquilino visualize seu contrato.
 
-**RF034** - O sistema deve permitir que o inquilino visualize as vistorias relacionadas ao seu contrato.
+**RF037** - O sistema deve permitir que o inquilino visualize as vistorias relacionadas ao seu contrato.
 
-**RF035** - O sistema deve permitir que proprietário e inquilino visualizem os agendamentos de vistorias.
+**RF038** - O sistema deve permitir que proprietário e inquilino consultem os agendamentos das vistorias.
 
-**RF036** - O sistema deve permitir que proprietário e inquilino consultem os contatos da imobiliária.
+**RF039** - O sistema deve permitir que proprietário e inquilino consultem os contatos da imobiliária.
 
 ---
 
 ## 7. Dashboard
 
-**RF037** - O sistema deve apresentar a quantidade de imóveis cadastrados.
+**RF040** - O sistema deve apresentar a quantidade de imóveis cadastrados.
 
-**RF038** - O sistema deve apresentar a quantidade de contratos ativos.
+**RF041** - O sistema deve apresentar a quantidade de contratos ativos.
 
-**RF039** - O sistema deve apresentar a quantidade de vistorias pendentes.
+**RF042** - O sistema deve apresentar a quantidade de vistorias pendentes.
 
-**RF040** - O sistema deve apresentar a quantidade de vistorias concluídas.
+**RF043** - O sistema deve apresentar a quantidade de vistorias concluídas.
 
 ---
 
 ## 8. Funcionalidades Futuras
 
-**RF041** - O sistema deverá permitir chat entre empresa, proprietário e inquilino.
+**RF044** - O sistema deverá permitir chat entre empresa, proprietário e inquilino.
 
-**RF042** - O sistema deverá permitir gerar relatórios em PDF.
+**RF045** - O sistema deverá permitir gerar relatórios em PDF.
 
-**RF043** - O sistema deverá permitir assinatura digital de documentos.
+**RF046** - O sistema deverá permitir assinatura digital de documentos.
 
-**RF044** - O sistema deverá permitir envio de notificações aos usuários.
+**RF047** - O sistema deverá permitir envio de notificações aos usuários.
