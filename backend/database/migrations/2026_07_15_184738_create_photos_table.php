@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('photos', function (Blueprint $table) {
             $table->id();
+            $table->string('path');
+            $table->enum('type', ['geral', 'avaria'])->default('geral');
+            $table->foreignId('inspection_item_id')->constrained('inspection_items')->onDelete('cascade');
             $table->timestamps();
         });
     }

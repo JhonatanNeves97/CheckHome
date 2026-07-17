@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('password'); 
             $table->string('phone')->nullable();
             $table->enum('status', ['active', 'inactive'])->default('active');
-            $table->timestamp();
+            $table->timestamps();
         });
     }
 
