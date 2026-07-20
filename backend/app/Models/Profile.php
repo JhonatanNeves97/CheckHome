@@ -6,5 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Profile extends Model
 {
-    //
+    protected $fillable = [
+        'name',
+    ];
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'user_profiles', 'profile_id', 'user_id');
+    }
 }
